@@ -25,11 +25,10 @@ user_input1= input("Masukan Nama Mahasiswa:")
 
 if user_input1 in student_info:
     info = student_info[user_input1]
-    print(f"Umur {user_input1} adalah {info['age']} dan prodinya adalah {info['major']}")
+    print(f"Umur {user_input1} adalah {info['Umur']} dan prodinya adalah {info['Jurusan']}")
 else:
     print("Tidak Valid")
 
-sapa("User")
 #Fungsi print ListNama
 def ListNama():
     print("+++++++++++++[List Nama]++++++++++++++")
@@ -56,8 +55,9 @@ FungsiUI()
 #Jalankan fungsi ListNama
 ListNama()
 
-def sapa(a):
-    print(f"Selamat datang di aplikasi VEGGIET {a}")
+def sapa():
+    nama = input("=================\nSelamat datang di menu!\nMasukkan nama anda: ")
+    print(f"Selamat datang di aplikasi VEGGIET {nama}")
     while True:
         print("Mau pesan apa?\nA.Sayur\nB.Sayur\nC.Gajadi")
         pilihanuser = input("A/B/C\nPilih : ").lower()
@@ -69,3 +69,4 @@ def sapa(a):
             break
         if "c" in pilihanuser:
             break
+sapa()
