@@ -71,6 +71,9 @@ def sapa():
             break
 sapa()
 
+# penambahan hello world
+print("Hello world")
+
 def login(a):
     jumlah = a
     while True:
