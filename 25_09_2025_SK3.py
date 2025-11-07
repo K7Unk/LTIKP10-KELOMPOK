@@ -70,3 +70,6 @@ def sapa():
         if "c" in pilihanuser:
             break
 sapa()
+
+# penambahan hello world
+print("Hello world")
